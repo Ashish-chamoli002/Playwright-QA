@@ -1,0 +1,33 @@
+{
+  "name": "playwright-qa",
+  "version": "1.0.0",
+  "description": "A light-weight QA automation framework using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project chromium",
+    "test:first": "npx playwright test --grep first",
+    "test:local": "BaseURL=http://localhost:4200 npx playwright test --project chromium ",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:UI": "npx playwright test --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashish-chamoli002/Playwright-QA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashish-chamoli002/Playwright-QA/issues"
+  },
+  "homepage": "https://github.com/Ashish-chamoli002/Playwright-QA#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.12.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.22.0"
+  }
+}
