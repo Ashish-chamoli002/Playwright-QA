@@ -9,7 +9,7 @@
     "test:first": "npx playwright test --grep first",
     "test:local": "BaseURL=http://localhost:4200 npx playwright test --project chromium ",
     "test:report": "npx playwright test && npx playwright show-report",
-    "test:UI": "npx playwright test --ui"
+    "test:UI": "npx playwright test --project chromium --ui"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
     "eslint": "^9.19.0",
     "globals": "^15.14.0",
     "typescript-eslint": "^8.22.0"
+  },
+  "dependencies": {
+    "npm": "^11.1.0"
   }
 }
