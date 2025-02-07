@@ -12,6 +12,5 @@ setup('creating customer 01', async ({ page }) => {
     await page.getByTestId('login-submit').click();
     await page.getByTestId('nav-menu').waitFor({ state: 'visible' });
     await expect(page.getByTestId('nav-menu')).toContainText('Jane Doe');
-    //await isContext.storageState({ path: customer01AuthFile });
     await page.context().storageState({ path: customer01AuthFile });
 });
